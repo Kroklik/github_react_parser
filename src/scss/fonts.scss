@@ -1,0 +1,11 @@
+$Montserrat: ('Regular', 400),
+        ('Medium', 500),
+        ('Bold', 700);
+
+@each $name, $size in $Montserrat {
+  @font-face {
+    font-family: 'Ope';
+    src: url('../assets/fonts/Montserrat-#{$name}.ttf');
+    font-weight: $size;
+  }
+}
